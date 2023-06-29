@@ -1,0 +1,224 @@
+body{
+    background:mistyrose;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 40vw;
+    background:transparent;
+    padding: 25px;
+}
+
+.container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    
+}
+
+.form-wrapper {
+    margin: 15px;
+    width: 100%;
+}
+
+.form {
+    width: 90%;
+}
+
+p {
+    font-family: sans-serif;
+    color: Black;
+    font-size: 15px;
+    font-weight:70%;
+}
+
+.form-item {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+}
+
+.form-item label {
+    width: 150px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-item input {
+    margin: 5px 15px;
+    height: 22px;
+    width: 100%;
+    font-size: 13px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.genders {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.genders input {
+    width: 20px;
+}
+.skills {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+.skills input {
+    width: 20px;
+}
+.register {
+    margin: 25px;
+    background:rosybrown;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: black;
+    border: 0;
+    cursor: pointer;
+    position:relative;
+             left: 60px;
+}
+
+.register:hover {
+    color: black;
+}
+.clear {
+    margin: 25px;
+    background:cyan;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color:black;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+              left: 800px;
+}
+
+.clear:hover {
+    color:hotpink;
+}
+.table-wrapper{
+    margin: 10px 210px 70px;
+    box-shadow: 0px 1px 1px black;
+}
+
+.show {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color:transparent;
+}
+
+.show td, .show th {
+    text-align: center;
+    padding: 8px;
+}
+
+.show td {
+    border-right: 2px solid brown;
+    font-size: 17px;
+}
+
+.show thead th {
+    color: black;
+    background:transparent;
+    font-size: 24px;
+}
+
+
+.show thead th:nth-child(odd) {
+    color: black;
+    background:transparent;
+    font-size: 24px;
+}
+
+.show tr:nth-child(even) {
+    background:transparent;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .show {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 12px;
+        color: rgb(233, 21, 21);
+        padding: 0 0 10px;
+    }
+    .show thead, .show tbody, .show thead th {
+        display: block;
+    }
+    .show thead th:last-child{
+        border-bottom: none;
+    }
+    .show thead {
+        float: left;
+    }
+    .show tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .show td, .show th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .show thead th {
+        text-align: left;
+        border-bottom: transparent;
+    }
+    .show tbody tr {
+        display: table-cell;
+    }
+    .show tbody tr:nth-child(odd) {
+        background: transparent;
+    }
+    .show tr:nth-child(even) {
+        background: transparent;
+    }
+    .show tr td:nth-child(odd) {
+        background: transparent;
+    }
+    .show tr td:nth-child(even) {
+        border-right: transparent;
+    }
+    .show tbody td {
+        display: block;
+        text-align: center;
+    }
+}
